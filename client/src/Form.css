@@ -1,0 +1,37 @@
+.form-container {
+  max-width: 400px;
+  margin: auto;
+}
+
+.list-group-item:hover {
+  background-color: #f0f4ff;
+  cursor: pointer;
+}
+
+li.mb-2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.badge {
+  font-size: 0.9em;
+  padding: 0.4em 0.7em;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border: none;
+  color: #212529;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
+
+.btn-info {
+  background-color: #0dcaf0;
+  border: none;
+  color: #fff;
+}
