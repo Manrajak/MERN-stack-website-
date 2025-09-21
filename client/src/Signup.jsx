@@ -11,7 +11,7 @@ function Signup(){
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        Axios.post('https://mern-stack-website-2ku3.onrender.com/register', { name, email, password })
+        Axios.post('https://mern-stack-website-59no.onrender.com/register', { name, email, password })
         .then(result => {console.log(result)
             if(result.data === "email alredy there!")alert("email alredy there!");
             navigate('/login')

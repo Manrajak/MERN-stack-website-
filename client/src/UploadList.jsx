@@ -10,7 +10,7 @@ function UploadList() {
 
   // Fetch distributed lists on mount
   useEffect(() => {
-    axios.get('https://mern-stack-website-2ku3.onrender.com/api/list/distributed', {
+    axios.get('https://mern-stack-website-59no.onrender.com/api/list/distributed', {
       headers: { Authorization: token }
     })
       .then(res => setLists(res.data.lists || []))
@@ -33,7 +33,7 @@ function UploadList() {
     const formData = new FormData();
     formData.append('file', file);
     try {
-      const res = await axios.post('https://mern-stack-website-2ku3.onrender.com/api/list/upload', formData, { headers: { Authorization: token } });
+      const res = await axios.post('https://mern-stack-website-59no.onrender.com/api/list/upload', formData, { headers: { Authorization: token } });
       setLists(res.data.lists);
       setError('');
     } catch (err) {
