@@ -17,7 +17,7 @@ dotenv.config({path : './.env'});
 const app = express();
 app.use(express.json());
 app.use(cors({
-  origin: "https://mern-stack-website-sigma.vercel.app"
+  origin: "https://mern-stack-website-quab.vercel.app"
 }));
 
 // Use .env for MongoDB connection
